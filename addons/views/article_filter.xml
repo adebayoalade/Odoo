@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_library_article_filter" model="ir.ui.view">
+        <field name="name">library.article.search</field>
+        <field name="model">library.article</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title"/>
+                <field name="author_id"/>
+                <field name="assigned_to_id"/>
+                <field name="state"/>
+                <field name="deadline"/>
+                <field name="publish_date"/>
+            </search>
+        </field>
+    </record>
+</odoo>

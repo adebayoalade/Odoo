@@ -1,0 +1,172 @@
+2024-07-30 17:49:06,162 4716 INFO ? odoo: Odoo version 17.0-20240730 
+2024-07-30 17:49:06,162 4716 INFO ? odoo: Using configuration file at C:\odoo17\server\odoo.conf 
+2024-07-30 17:49:06,162 4716 INFO ? odoo: addons paths: ['C:\\odoo17\\server\\odoo\\addons', 'c:\\odoo17\\sessions\\addons\\17.0', 'c:\\odoo17\\server\\odoo\\addons'] 
+2024-07-30 17:49:06,162 4716 INFO ? odoo: database: openpg@localhost:5432 
+2024-07-30 17:49:11,115 4716 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\odoo17\thirdparty\wkhtmltopdf.exe 
+2024-07-30 17:49:19,833 4716 WARNING ? py.warnings: C:\odoo17\python\Lib\site-packages\vobject\base.py:736: SyntaxWarning: invalid escape sequence '\-'
+  File "C:\odoo17\server\odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "C:\odoo17\server\odoo\cli\command.py", line 66, in main
+    o.run(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 184, in run
+    main(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 177, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\odoo17\server\odoo\service\server.py", line 1359, in start
+    load_server_wide_modules()
+  File "C:\odoo17\server\odoo\service\server.py", line 1262, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "C:\odoo17\server\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "C:\odoo17\server\odoo\addons\web\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\odoo17\server\odoo\addons\web\models\__init__.py", line 11, in <module>
+    from . import res_partner
+  File "C:\odoo17\server\odoo\addons\web\models\res_partner.py", line 12, in <module>
+    import vobject
+  File "C:\odoo17\python\Lib\site-packages\vobject\__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "C:\odoo17\python\Lib\warnings.py", line 110, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "C:\odoo17\server\odoo\netsvc.py", line 288, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2024-07-30 17:49:19,849 4716 WARNING ? py.warnings: C:\odoo17\python\Lib\site-packages\vobject\base.py:1219: SyntaxWarning: invalid escape sequence '\;'
+  File "C:\odoo17\server\odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "C:\odoo17\server\odoo\cli\command.py", line 66, in main
+    o.run(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 184, in run
+    main(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 177, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\odoo17\server\odoo\service\server.py", line 1359, in start
+    load_server_wide_modules()
+  File "C:\odoo17\server\odoo\service\server.py", line 1262, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "C:\odoo17\server\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "C:\odoo17\server\odoo\addons\web\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\odoo17\server\odoo\addons\web\models\__init__.py", line 11, in <module>
+    from . import res_partner
+  File "C:\odoo17\server\odoo\addons\web\models\res_partner.py", line 12, in <module>
+    import vobject
+  File "C:\odoo17\python\Lib\site-packages\vobject\__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "C:\odoo17\python\Lib\warnings.py", line 110, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "C:\odoo17\server\odoo\netsvc.py", line 288, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2024-07-30 17:49:19,849 4716 WARNING ? py.warnings: C:\odoo17\python\Lib\site-packages\vobject\base.py:1219: SyntaxWarning: invalid escape sequence '\,'
+  File "C:\odoo17\server\odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "C:\odoo17\server\odoo\cli\command.py", line 66, in main
+    o.run(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 184, in run
+    main(args)
+  File "C:\odoo17\server\odoo\cli\server.py", line 177, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "C:\odoo17\server\odoo\service\server.py", line 1359, in start
+    load_server_wide_modules()
+  File "C:\odoo17\server\odoo\service\server.py", line 1262, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "C:\odoo17\server\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "C:\odoo17\server\odoo\addons\web\__init__.py", line 5, in <module>
+    from . import models
+  File "C:\odoo17\server\odoo\addons\web\models\__init__.py", line 11, in <module>
+    from . import res_partner
+  File "C:\odoo17\server\odoo\addons\web\models\res_partner.py", line 12, in <module>
+    import vobject
+  File "C:\odoo17\python\Lib\site-packages\vobject\__init__.py", line 79, in <module>
+    from .base import newFromBehavior, readOne, readComponents
+  File "C:\odoo17\python\Lib\warnings.py", line 110, in _showwarnmsg
+    sw(msg.message, msg.category, msg.filename, msg.lineno,
+  File "C:\odoo17\server\odoo\netsvc.py", line 288, in showwarning_with_traceback
+    for frame in traceback.extract_stack():
+ 
+2024-07-30 17:49:20,958 4716 INFO ? odoo.service.server: Initiating shutdown 
+2024-07-30 17:49:20,958 4716 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-07-30 17:50:07,758 5476 INFO ? odoo: Odoo version 17.0-20240730 
+2024-07-30 17:50:07,758 5476 INFO ? odoo: Using configuration file at C:\odoo17\server\odoo.conf 
+2024-07-30 17:50:07,758 5476 INFO ? odoo: addons paths: ['C:\\odoo17\\server\\odoo\\addons', 'c:\\odoo17\\sessions\\addons\\17.0', 'c:\\odoo17\\server\\odoo\\addons'] 
+2024-07-30 17:50:07,758 5476 INFO ? odoo: database: openpg@localhost:5432 
+2024-07-30 17:50:08,289 5476 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\odoo17\thirdparty\wkhtmltopdf.exe 
+2024-07-30 17:50:09,586 5476 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-0PIMF5T:8069 
+2024-07-30 17:50:13,695 5476 INFO ? odoo.sql_db: Connection to the database failed 
+2024-07-30 17:50:17,789 5476 INFO ? odoo.sql_db: Connection to the database failed 
+2024-07-30 18:29:31,034 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:31] "GET / HTTP/1.1" 303 - 1 0.033 0.292
+2024-07-30 18:29:31,188 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:31] "GET /web HTTP/1.1" 303 - 2 0.008 0.138
+2024-07-30 18:29:40,429 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:40] "GET /web/database/selector HTTP/1.1" 200 - 2 0.006 9.229
+2024-07-30 18:29:41,277 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 1 0.005 0.404
+2024-07-30 18:29:41,280 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/lib/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 - 1 0.008 0.403
+2024-07-30 18:29:41,291 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/lib/bootstrap/js/dist/dom/data.js HTTP/1.1" 200 - 1 0.007 0.414
+2024-07-30 18:29:41,297 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/lib/bootstrap/js/dist/dom/event-handler.js HTTP/1.1" 200 - 1 0.005 0.419
+2024-07-30 18:29:41,306 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/lib/bootstrap/js/dist/dom/selector-engine.js HTTP/1.1" 200 - 1 0.011 0.418
+2024-07-30 18:29:41,307 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:41] "GET /web/static/lib/bootstrap/js/dist/dom/manipulator.js HTTP/1.1" 200 - 1 0.007 0.425
+2024-07-30 18:29:42,091 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:42] "GET /web/static/lib/bootstrap/js/dist/base-component.js HTTP/1.1" 200 - 1 0.006 0.475
+2024-07-30 18:29:42,096 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:42] "GET /web/static/lib/bootstrap/js/dist/modal.js HTTP/1.1" 200 - 1 0.005 0.461
+2024-07-30 18:29:42,113 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:42] "GET /web/static/src/public/database_manager.js HTTP/1.1" 200 - 1 0.007 0.473
+2024-07-30 18:29:42,508 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:42] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 1 0.006 0.081
+2024-07-30 18:29:43,600 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:43] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 1 0.004 0.090
+2024-07-30 18:29:43,855 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 18:29:43] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 1 0.005 0.088
+2024-07-30 18:30:49,618 5476 ERROR None odoo.addons.web.controllers.database: Database creation error. 
+Traceback (most recent call last):
+  File "C:\odoo17\server\odoo\addons\web\controllers\database.py", line 78, in create
+    raise Exception(_('Houston, we have a database naming issue! Make sure you only use letters, numbers, underscores, hyphens, or dots in the database name, and you\'ll be golden.'))
+Exception: Houston, we have a database naming issue! Make sure you only use letters, numbers, underscores, hyphens, or dots in the database name, and you'll be golden.
+2024-07-30 18:30:50,756 5476 INFO None werkzeug: 127.0.0.1 - - [30/Jul/2024 18:30:50] "POST /web/database/create HTTP/1.1" 200 - 2 0.008 4.138
+2024-07-30 18:33:08,882 5476 ERROR None odoo.addons.web.controllers.database: Database creation error. 
+Traceback (most recent call last):
+  File "C:\odoo17\server\odoo\addons\web\controllers\database.py", line 81, in create
+    dispatch_rpc('db', 'create_database', [master_pwd, name, bool(post.get('demo')), lang, password, post['login'], country_code, post['phone']])
+  File "C:\odoo17\server\odoo\http.py", line 391, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo17\server\odoo\service\db.py", line 487, in dispatch
+    check_super(passwd)
+  File "C:\odoo17\server\odoo\service\db.py", line 53, in check_super
+    raise odoo.exceptions.AccessDenied()
+odoo.exceptions.AccessDenied: Access Denied
+2024-07-30 18:33:10,070 5476 INFO None werkzeug: 127.0.0.1 - - [30/Jul/2024 18:33:10] "POST /web/database/create HTTP/1.1" 200 - 2 0.009 3.462
+2024-07-30 19:51:55,889 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 19:51:55] "GET / HTTP/1.1" 303 - 1 0.313 0.310
+2024-07-30 19:51:56,070 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 19:51:56] "GET /web HTTP/1.1" 303 - 2 0.009 0.153
+2024-07-30 19:51:57,506 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 19:51:57] "GET /web/database/selector HTTP/1.1" 200 - 2 0.013 1.420
+2024-07-30 19:52:35,388 5476 ERROR None odoo.addons.web.controllers.database: Database creation error. 
+Traceback (most recent call last):
+  File "C:\odoo17\server\odoo\addons\web\controllers\database.py", line 81, in create
+    dispatch_rpc('db', 'create_database', [master_pwd, name, bool(post.get('demo')), lang, password, post['login'], country_code, post['phone']])
+  File "C:\odoo17\server\odoo\http.py", line 391, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo17\server\odoo\service\db.py", line 487, in dispatch
+    check_super(passwd)
+  File "C:\odoo17\server\odoo\service\db.py", line 53, in check_super
+    raise odoo.exceptions.AccessDenied()
+odoo.exceptions.AccessDenied: Access Denied
+2024-07-30 19:52:36,687 5476 INFO None werkzeug: 127.0.0.1 - - [30/Jul/2024 19:52:36] "POST /web/database/create HTTP/1.1" 200 - 2 0.008 3.404
+2024-07-30 20:10:39,120 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:10:39] "GET / HTTP/1.1" 303 - 1 0.008 0.071
+2024-07-30 20:10:39,372 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:10:39] "GET /web HTTP/1.1" 303 - 2 0.012 0.233
+2024-07-30 20:10:40,686 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:10:40] "GET /web/database/selector HTTP/1.1" 200 - 2 0.009 1.300
+2024-07-30 20:13:08,563 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:13:08] "GET /web/database/selector HTTP/1.1" 200 - 2 0.007 1.302
+2024-07-30 20:13:17,602 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:13:17] "GET / HTTP/1.1" 303 - 1 0.004 0.111
+2024-07-30 20:13:17,788 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:13:17] "GET /web HTTP/1.1" 303 - 2 0.012 0.162
+2024-07-30 20:13:19,382 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:13:19] "GET /web/database/selector HTTP/1.1" 200 - 2 0.011 1.273
+2024-07-30 20:15:28,666 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:15:28] "GET / HTTP/1.1" 303 - 1 0.047 0.048
+2024-07-30 20:15:29,001 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:15:29] "GET /web HTTP/1.1" 303 - 2 0.000 0.163
+2024-07-30 20:15:30,407 5476 INFO ? werkzeug: 127.0.0.1 - - [30/Jul/2024 20:15:30] "GET /web/database/selector HTTP/1.1" 200 - 2 0.020 1.387
+2024-07-30 20:16:14,063 5476 ERROR None odoo.addons.web.controllers.database: Database creation error. 
+Traceback (most recent call last):
+  File "C:\odoo17\server\odoo\addons\web\controllers\database.py", line 81, in create
+    dispatch_rpc('db', 'create_database', [master_pwd, name, bool(post.get('demo')), lang, password, post['login'], country_code, post['phone']])
+  File "C:\odoo17\server\odoo\http.py", line 391, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\odoo17\server\odoo\service\db.py", line 487, in dispatch
+    check_super(passwd)
+  File "C:\odoo17\server\odoo\service\db.py", line 53, in check_super
+    raise odoo.exceptions.AccessDenied()
+odoo.exceptions.AccessDenied: Access Denied
+2024-07-30 20:16:15,256 5476 INFO None werkzeug: 127.0.0.1 - - [30/Jul/2024 20:16:15] "POST /web/database/create HTTP/1.1" 200 - 2 0.008 3.293

@@ -1,0 +1,15 @@
+<odoo>
+    <record id="email_template_article_read" model="mail.template">
+        <field name="name">Article Read Notification</field>
+        <field name="model_id" ref="model_library_article"/>
+        <field name="email_from">${(object.create_uid.email or '').strip()}</field>
+        <field name="email_to">${(object.create_uid.email or '').strip()}</field>
+        <field name="subject">Article ${object.title} Read</field>
+        <field name="body_html">
+            <![CDATA[
+                <p>Dear ${object.create_uid.name},</p>
+                <p>The article "${object.title}" has been read by ${object.assigned_to_id.name}.</p>
+            ]]>
+        </field>
+    </record>
+</odoo>
