@@ -1,0 +1,16 @@
+<odoo>
+    <record id="email_template_article_read" model="mail.template">
+        <field name="name">Article Read Notification</field>
+        <field name="email_from">${object.author_id.email|safe}</field>
+        <field name="subject">Article Read: ${object.title}</field>
+        <field name="model_id" ref="model_article_management_article"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html">
+            <![CDATA[
+            <p>Hello,</p>
+            <p>The article "${object.title}" has been marked as read by ${object.assigned_to_id.name}.</p>
+            <p>Thank you.</p>
+            ]]>
+        </field>
+    </record>
+</odoo>

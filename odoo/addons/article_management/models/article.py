@@ -1,8 +1,9 @@
 from odoo import models, fields, api
 from odoo.exceptions import UserError
 
-class LibraryArticle(models.Model):
-    _name = 'library.article'
+
+class Article(models.Model):
+    _name = 'article.management'
     _description = 'Article Management'
     
     image = fields.Binary("Image")
@@ -21,17 +22,20 @@ class LibraryArticle(models.Model):
     
     @api.model
     def create(self, vals):
-        article = super(LibraryArticle, self).create(vals)
+        article = super(Article, self).create(vals)
         self._send_notification(article)
         return article
     
     def write(self, vals):
-        res = super(LibraryArticle, self).write(vals)
+        res = super(Article, self).write(vals)
         if 'state' in vals and vals['state'] == 'read':
-            self._send_notification(self)
+            for record in self:
+                self._send_notification(record)
         return res
 
     def _send_notification(self, article):
         if article.state == 'read':
             template = self.env.ref('your_module.email_template_article_read')
-            self.env['mail.template'].browse(template.id).send_mail(article.id)
+            if template:
+                template.send_mail(article.id, force_send=True)
+

@@ -1,0 +1,12 @@
+<odoo>
+    <record id="article_1" model="article.management.article">
+        <field name="title">Demo Article 1</field>
+        <field name="author_id" ref="base.res_partner_1"/>
+        <field name="publish_date">2024-01-01</field>
+        <field name="start_date">2024-02-01</field>
+        <field name="deadline">2024-03-01</field>
+        <field name="assigned_to_id" ref="base.res_partner_2"/>
+        <field name="content">This is a demo article for testing purposes.</field>
+        <field name="state">open</field>
+    </record>
+</odoo>
