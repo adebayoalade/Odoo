@@ -6,14 +6,14 @@
     'author': 'David',
     'depends': ['base'],
     'data': [
-        'security/article_security.xml',
         'security/ir.model.access.csv',
         'views/article_views.xml',
-        'views/article_templates.xml',
+        'views/article_menu.xml',
+        # 'views/article_filter.xml',
         'report/article_report.xml',
     ],
     'demo': [
-        'demo/article_demo.xml',
+        'data/demo_data.xml',
     ],
     'test': [
         'tests/test_article.py',

@@ -1,27 +1,27 @@
 <odoo>
-    <record id="view_library_article_tree" model="ir.ui.view">
-        <field name="name">library.article.tree</field>
-        <field name="model">library.article</field>
+    <!-- Tree View -->
+    <record id="view_article_tree" model="ir.ui.view">
+        <field name="name">article.management.tree</field>
+        <field name="model">article.management</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="title"/>
                 <field name="author_id"/>
                 <field name="publish_date"/>
-                <field name="deadline"/>
-                <field name="assigned_to_id"/>
                 <field name="state"/>
             </tree>
         </field>
     </record>
-    
-    <record id="view_library_article_form" model="ir.ui.view">
-        <field name="name">library.article.form</field>
-        <field name="model">library.article</field>
+
+    <!-- Form View -->
+    <record id="view_article_form" model="ir.ui.view">
+        <field name="name">article.management.form</field>
+        <field name="model">article.management</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <field name="image" widget="image"/>
+                        <field name="image"/>
                         <field name="title"/>
                         <field name="author_id"/>
                         <field name="publish_date"/>
@@ -36,25 +36,25 @@
             </form>
         </field>
     </record>
-    
-    <record id="view_library_article_kanban" model="ir.ui.view">
-        <field name="name">library.article.kanban</field>
-        <field name="model">library.article</field>
+
+    <!-- Kanban View -->
+    <record id="view_article_kanban" model="ir.ui.view">
+        <field name="name">article.management.kanban</field>
+        <field name="model">article.management</field>
         <field name="arch" type="xml">
             <kanban>
-                <field name="title"/>
-                <field name="state"/>
                 <templates>
                     <t t-name="kanban-box">
-                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
-                            <strong>
-                                <field name="title"/>
-                            </strong>
-                            <div>
-                                <field name="author_id"/>
-                            </div>
-                            <div>
-                                <field name="state"/>
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <strong><field name="title"/></strong>
+                                <div class="oe_kanban_description">
+                                    <field name="author_id"/>
+                                    <field name="publish_date"/>
+                                </div>
+                                <div class="oe_kanban_state">
+                                    <field name="state"/>
+                                </div>
                             </div>
                         </div>
                     </t>

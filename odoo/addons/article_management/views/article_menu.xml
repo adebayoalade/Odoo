@@ -1,0 +1,17 @@
+<odoo>
+    <!-- Action -->
+    <record id="action_article_management" model="ir.actions.act_window">
+        <field name="name">Article Management</field>
+        <field name="res_model">article.management</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id" ref="view_article_tree"/>
+    </record>
+
+    <!-- Main Menu -->
+    <menuitem id="menu_article_management_root" name="Article Management"/>
+
+    <!-- Sub Menu -->
+    <menuitem id="menu_article_management" name="Articles"
+              parent="menu_article_management_root"
+              action="action_article_management"/>
+</odoo>
