@@ -1,9 +1,10 @@
 {
     'name': 'Article Management',
+    'author' : 'david',
+    'website' : 'www.odoo.com',
     'version': '2.0',
     'summary': 'Manage articles assigned to readers',
     'description': 'This module allows managers to create articles, assign them to readers, and track their progress.',
-    'author': 'David',
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
